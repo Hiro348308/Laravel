@@ -46,6 +46,8 @@
 
                         <!-- Right Side Of Navbar -->
                         <ul class="navbar-nav ml-auto">
+                        {{-- 以下を追記 --}}
+                        <!-- Authentication Links -->
                         {{-- ログインしていなかったらログイン画面へのリンクを表示 --}}
                         @guest
                             <li><a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a></li>
@@ -69,6 +71,8 @@
                                 </div>
                             </li>
                             @endguest
+                            {{-- 以上までを追記 --}}
+                        </ul>
                         </ul>
                     </div>
                 </div>
